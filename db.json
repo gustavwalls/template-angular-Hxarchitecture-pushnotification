@@ -1,0 +1,6 @@
+{
+  "posts": [
+    { "id": "1", "title": "Primer post", "content": "Contenido del primer post", "createdAt": "2024-01-01" },
+    { "id": "2", "title": "Segundo post", "content": "Contenido del segundo post", "createdAt": "2024-01-02" }
+  ]
+}

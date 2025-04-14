@@ -1,0 +1,20 @@
+<h2 class="text-center text-white bg-secondary py-3 h1">Lista de usuarios </h2>
+
+<div class="container mt-3 text-center">
+    <button class="btn btn-primary" (click)="activateNotifications()">
+      Activar notificaciones
+    </button>
+  </div>
+
+  <div *ngIf="lastNotification" class="container mt-3 alert alert-info">
+    <h4>{{ lastNotification.title }}</h4>
+    <p>{{ lastNotification.body }}</p>
+  </div>
+  
+<section class="container mt-5" >
+    @for (item of posts; track item.title) {
+        <li>{{ item.title }} <p>{{item.content}}</p></li>
+    } @empty {
+        <li>There are no items.</li>
+    }
+</section>
