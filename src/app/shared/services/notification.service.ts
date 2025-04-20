@@ -1,4 +1,3 @@
-// shared/services/notification.service.ts
 import { Injectable } from '@angular/core';
 import { initializeApp } from 'firebase/app';
 import { getMessaging, getToken, onMessage } from 'firebase/messaging';
